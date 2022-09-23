@@ -22,13 +22,15 @@ Researched answer: THe predefined parameters are value, index, and array. The va
 
 Your answer: Map is a method inside the function that will bring back the same length of the original array (for example, great for modifying an array with multiplcation). filter will filter through the array and bring back what its supposed to bring back (for example, you can filter through an array of numbers and bring back odd numbers)
 
-Researched answer:
+Researched answer: Map is used to create a new array with with the same length, once it has been manipulated however desired (for example, bringing back a new array of numbers from an original array multiplied by 3). The elements can be changed however you set the function to do so. Filter will create an array that can be a different length than the original array, it returns the elements that your function has been set to bring forward (for example, even or odd numbers). 
+
 
 4. What is iteration?
 
-Your answer: the .map() method iterates through an array, and will return a new array of the same length. .filter() method iterates through an array and returns the values that are stated in the condition, filtering through the original array.
+Your answer: iteration is the process of looping through a function until to bring backa particular return.
 
-Researched answer:
+Researched answer: Iteration is used when you want to loop a functionality repeatedly, in a predetermined amount of loops. If you wanted something to loop five times, you would use a for loop to iterate a function to loop 5 times
+
 
 5. What is the difference between a class and an object?
 

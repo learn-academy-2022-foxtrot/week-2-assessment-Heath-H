@@ -79,19 +79,19 @@
 // a) Create a test with expect statements for each of the variables provided.
 
 
-describe("capitalizeThis", () => {
-    it("takes in an array of words and returns an array with all the words capitalized.", () => {
-    expect(capitalizeThis(randomNouns1)).toEqual(["Streetlamp", "Potato", "Teeth", "Conclusion", "Nephew"])
-    expect(capitalizeThis(randomNouns2)).toEqual(["Temperature", "Database", "Chopsticks", "Mango"])
-    })
-  })
+// describe("capitalizeThis", () => {
+//     it("takes in an array of words and returns an array with all the words capitalized.", () => {
+//     expect(capitalizeThis(randomNouns1)).toEqual(["Streetlamp", "Potato", "Teeth", "Conclusion", "Nephew"])
+//     expect(capitalizeThis(randomNouns2)).toEqual(["Temperature", "Database", "Chopsticks", "Mango"])
+//     })
+//   })
 
-  // output: describe is not defined
-
-
+  // output: describe is not defined, good fail
 
 
-const randomNouns1 = ["streetlamp", "potato", "teeth", "conclusion", "nephew"]
+
+
+// const randomNouns1 = ["streetlamp", "potato", "teeth", "conclusion", "nephew"]
 // // Expected output: ["Streetlamp", "Potato", "Teeth", "Conclusion", "Nephew"]
 // const randomNouns2 = ["temperature", "database", "chopsticks", "mango"]
 // // Expected output: ["Temperature", "Database", "Chopsticks", "Mango"]
@@ -100,11 +100,29 @@ const randomNouns1 = ["streetlamp", "potato", "teeth", "conclusion", "nephew"]
 
 
 // create a function called capitolize this that takes in array
-const capitalizeThis = (array) => {
-    return array.map((string) => {
-        return string[0].toUpperCase() + string.substring(1)
-    })
-  }
+// function called capitalizeThis
+//new array will contain outcome of capitalizeThis function
+// to iterate the aarray, i need a for loop 
+// use toUpperCase to capitalize the first letter of each word at charAt(0)
+// slice the word 
+// use .push on new array to create a new array with capital letters 
+
+
+// const capitalizeThis = (array) => {
+//     newArray = []
+//     //arrray.length starts at [0] and iterates through entire array
+//     for (i=0; i<array.length; i++) {
+//       let word = array[i]
+//       newArray.push(word.charAt(0).toUpperCase() + word.slice(1))
+//     }
+//     return newArray
+//   }
+
+  // console.log(capitalizeThis(randomNouns1))
+  // output: [ 'Streetlamp', 'Potato', 'Teeth', 'Conclusion', 'Nephew' ]
+
+  // console.log(capitalizeThis(randomNouns2))
+  // output: [ 'Temperature', 'Database', 'Chopsticks', 'Mango' ]
 
 
 
@@ -131,7 +149,19 @@ const capitalizeThis = (array) => {
 // const vowelTester3 = "challenges"
 // // Expected output: 2
 
+// function = firstVowel
+// probably should use a for loop to go through each index
+// outcome is the index of where the first vowel of 
 
+// describe("indexOfFirstVowel", () => {
+//   it("that takes in a string and logs the index of the first vowel", () => {
+//     expect(indexOfFirstVowel(vowelTester1)).toEqual(1)
+//     expect(indexOfFirstVowel(vowelTester2)).toEqual(0)
+//     expect(indexOfFirstVowel(vowelTester3)).toEqual(2)
+//   })
+// })
+
+// output: describe is not defined, good fail
 
 
 
@@ -140,3 +170,21 @@ const capitalizeThis = (array) => {
 
 
 // // b) Create the function that makes the test pass.
+
+// start with a function indexOfFirstVowel, and figure out the logic to iterate through each index, using for loop using i as a variable 
+// there needs to be a conditional statement for vowels, to check if an element in an index is a vowel. then i need to return the [i] that contains the vowel. || means OR
+
+const indexOfFirstVowel = (str) => {
+  for (let i = 0; i <str.length; i++) {
+    if (
+      str[i] === "a" ||
+      str[i] === "e" ||
+      str[i] === "i" ||
+      str[i] === "o" ||
+      str[i] === "u") {
+        
+        return i
+      }
+  }
+}
+

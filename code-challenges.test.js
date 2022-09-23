@@ -58,7 +58,7 @@
     // the function is divisibleBy3
 // const divisibleBy3 = (object) => {
 //     let object1 = 15
-    
+    //create an if statement to determine if a number is divisible by three using strictly equals 0 and does not strictly equal zero (does not have zero as a remainder)
 //     if(object.number % 3 === 0) {
 //         return `${object.number} is divisible by three`
 //     } else if (object.number % 3 !==0) {
@@ -182,7 +182,7 @@ const indexOfFirstVowel = (str) => {
       str[i] === "i" ||
       str[i] === "o" ||
       str[i] === "u") {
-        
+
         return i
       }
   }

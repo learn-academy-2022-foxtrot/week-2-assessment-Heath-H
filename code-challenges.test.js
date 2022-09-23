@@ -58,7 +58,7 @@
     // the function is divisibleBy3
 // const divisibleBy3 = (object) => {
 //     let object1 = 15
-    //create an if statement to determine if a number is divisible by three using strictly equals 0 and does not strictly equal zero (does not have zero as a remainder)
+//     create an if statement to determine if a number is divisible by three using strictly equals 0 and does not strictly equal zero (does not have zero as a remainder)
 //     if(object.number % 3 === 0) {
 //         return `${object.number} is divisible by three`
 //     } else if (object.number % 3 !==0) {
@@ -108,20 +108,20 @@
 // use .push on new array to create a new array with capital letters 
 
 
-// const capitalizeThis = (array) => {
-//     newArray = []
-//     //arrray.length starts at [0] and iterates through entire array
-//     for (i=0; i<array.length; i++) {
-//       let word = array[i]
-//       newArray.push(word.charAt(0).toUpperCase() + word.slice(1))
-//     }
-//     return newArray
-//   }
+const capitalizeThis = (array) => {
+    newArray = []
+    //arrray.length starts at [0] and iterates through entire array
+    for (i=0; i<array.length; i++) {
+      let word = array[i]
+      newArray.push(word.charAt(0).toUpperCase() + word.slice(1))
+    }
+    return newArray
+  }
 
-  // console.log(capitalizeThis(randomNouns1))
+  console.log(capitalizeThis(randomNouns1))
   // output: [ 'Streetlamp', 'Potato', 'Teeth', 'Conclusion', 'Nephew' ]
 
-  // console.log(capitalizeThis(randomNouns2))
+  console.log(capitalizeThis(randomNouns2))
   // output: [ 'Temperature', 'Database', 'Chopsticks', 'Mango' ]
 
 
